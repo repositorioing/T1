@@ -1,0 +1,6 @@
+C:\Users\ALEXANDER\Desktop\SEMANA_06_T1\MiBiblioteca\bin\Debug\MiBiblioteca.dll
+C:\Users\ALEXANDER\Desktop\SEMANA_06_T1\MiBiblioteca\bin\Debug\MiBiblioteca.pdb
+C:\Users\ALEXANDER\Desktop\SEMANA_06_T1\MiBiblioteca\obj\Debug\MiBiblioteca.csproj.AssemblyReference.cache
+C:\Users\ALEXANDER\Desktop\SEMANA_06_T1\MiBiblioteca\obj\Debug\MiBiblioteca.csproj.CoreCompileInputs.cache
+C:\Users\ALEXANDER\Desktop\SEMANA_06_T1\MiBiblioteca\obj\Debug\MiBiblioteca.dll
+C:\Users\ALEXANDER\Desktop\SEMANA_06_T1\MiBiblioteca\obj\Debug\MiBiblioteca.pdb
