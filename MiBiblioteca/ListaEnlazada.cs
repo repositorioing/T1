@@ -10,14 +10,14 @@ namespace MiBiblioteca
     {
         public Nodo primero = null;
 
-        public void InsertarDato(Cajas info)
+        public void InsertarDatos(char operador)
         {
-            Nodo nuevoDato = new Nodo();
-            nuevoDato.dato = info;
+            Nodo nuevo = new Nodo();
+            nuevo.dato = operador;
 
             if (primero == null)
             {
-                primero = nuevoDato;
+                primero = nuevo;
             }
             else
             {
@@ -27,8 +27,9 @@ namespace MiBiblioteca
                 {
                     temp = temp.siguiente;
                 }
-                temp.siguiente = nuevoDato;
+                temp.siguiente = nuevo;
             }
+
         }
         public void MostrarDatos()
         {
@@ -36,25 +37,12 @@ namespace MiBiblioteca
 
             while (temp != null)
             {
-                Console.WriteLine(temp.dato);
-                temp = temp.siguiente;
+                Console.Write(temp.dato);
+                temp = temp.siguiente;  
             }
+            Console.WriteLine();
         }
-        public bool BuscarCaja(int codigo)
-        {
-            Nodo temp = primero;
-
-            while (temp != null)
-            {
-                if (temp.dato.codigo == codigo)
-                {
-                    Console.WriteLine(temp.dato);
-                    return true;
-                } 
-                temp = temp.siguiente;
-            }
-            return false;
-        }
+        
 
     }
 }

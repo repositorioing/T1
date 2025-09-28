@@ -12,47 +12,42 @@ namespace MiBiblioteca
     {
         public Nodo cima = null;
 
-        public void Apilar(Cajas infor)
+        public void Apilar(char operadores)
         {
             Nodo nuevoDato = new Nodo();
-            nuevoDato.dato = infor;
+            nuevoDato.dato = operadores;
 
             nuevoDato.siguiente = cima;
             cima = nuevoDato;
+
         }
-        public Cajas Desapilar()
+        public char Desapilar()
         {
             if (cima != null)
             {
-                Cajas  dato = cima.dato;
+                char nuevo = cima.dato;
 
                 cima = cima.siguiente;
-                return dato;
+                return nuevo;
             }
             else
             {
-                return null;
+                return ' ';
             }
         }
-        public void Clasificaja(ListaEnlazada liviana, ListaEnlazada pesada)
+        public char VerCima()
         {
-            Nodo temp = cima;
-            
-            while (temp != null)
+            if (cima != null)
             {
-                Cajas caja = Desapilar();
-
-                if (caja.peso > 50)
-                {
-                    pesada.InsertarDato(caja);
-                }
-                else
-                {
-                    liviana.InsertarDato(caja);
-                }
-                temp = temp.siguiente;
+                return cima.dato;
             }
-            Console.WriteLine("Cajas clasificadas exitosamente");
+            return ' ';
         }
+        public bool EstaVacia()
+        {
+            return cima == null;
+        }   
+
+
     }
 }

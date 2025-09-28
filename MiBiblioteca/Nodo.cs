@@ -8,7 +8,7 @@ namespace MiBiblioteca
 {
     public class Nodo
     {
-        public Cajas dato;
+        public char dato;
         public Nodo siguiente = null;
     }
 }
